@@ -1,0 +1,39 @@
+@host = localhost:3000
+###
+GET http://{{host}}/readAll
+Content-Type: application/json
+
+{
+}
+
+###
+GET http://{{host}}/readOne/1
+Content-Type: application/json
+
+{
+}
+
+###
+POST http://{{host}}/createUser
+Content-Type: application/json
+
+{
+    "id": 1,
+    "firstName": "Donghyun",
+    "lastName": "Kang" 
+}
+
+###
+PATCH http://{{host}}/update/1
+Content-Type: application/json
+
+{
+    "firstName": "Donghyun",
+    "lastName": "Kang" 
+}
+###
+DELETE http://{{host}}/delete/1
+Content-Type: application/json
+
+{
+}
